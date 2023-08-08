@@ -1,7 +1,3 @@
-# Tauri + Yew
-
-This template should help get you started developing with Tauri and Angular.
-
-## Recommended IDE Setup
-
-[VS Code](https://code.visualstudio.com/) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer) + [Angular Language Service](https://marketplace.visualstudio.com/items?itemName=Angular.ng-template).
+This project's goals are the following:
+-build a martial arts session and experience tracker for individuals, at least at first. It may be expanded later to help generalist martial arts clubs (MMA, self defense such as Krav Maga or Jeet Kune Do), and may include a web implementation.
+-for me to learn and improve my competency in Rust.
