@@ -24,6 +24,7 @@ mod martial_arts {
             + martial_art.weapon_defense
             + martial_art.knees
             + martial_art.elbows
+            + martial_art.ground_n_pound
             == 100;
     }
 }
