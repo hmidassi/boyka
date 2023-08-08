@@ -2,15 +2,16 @@ mod martial_arts {
 
     pub struct MartialArt {
         name: String,
-        punches: i32,
-        kicks: i32,
-        knees: i32,
-        elbows: i32,
-        standup_grappling: i32,
-        ground_grappling: i32,
-        trapping: i32,
-        weapon_manipulation: i32,
-        weapon_defense: i32,
+        punches: i8,
+        kicks: i8,
+        knees: i8,
+        elbows: i8,
+        standup_grappling: i8,
+        ground_grappling: i8,
+        ground_n_pound: i8,
+        trapping: i8,
+        weapon_manipulation: i8,
+        weapon_defense: i8,
     }
 
     fn sum_equal_to_100(martial_art: MartialArt) {
