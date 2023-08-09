@@ -14,17 +14,19 @@ mod martial_arts {
         weapon_defense: i8,
     }
 
-    fn sum_equal_to_100(martial_art: MartialArt) {
-        martial_art.punches
-            + martial_art.kicks
-            + martial_art.standup_grappling
-            + martial_art.ground_grappling
-            + martial_art.trapping
-            + martial_art.weapon_manipulation
-            + martial_art.weapon_defense
-            + martial_art.knees
-            + martial_art.elbows
-            + martial_art.ground_n_pound
-            == 100;
+    impl MartialArt {
+        fn sum_equal_to_100(martial_art: MartialArt) {
+            martial_art.punches
+                + martial_art.kicks
+                + martial_art.standup_grappling
+                + martial_art.ground_grappling
+                + martial_art.trapping
+                + martial_art.weapon_manipulation
+                + martial_art.weapon_defense
+                + martial_art.knees
+                + martial_art.elbows
+                + martial_art.ground_n_pound
+                == 100;
+        }
     }
 }
