@@ -1,7 +1,7 @@
 mod martial_arts {
 
     pub struct MartialArt {
-        name: String,
+        martialart_name: String,
         punches: i8,
         kicks: i8,
         knees: i8,

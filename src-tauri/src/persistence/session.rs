@@ -3,6 +3,7 @@ use martial_arts::MartialArt;
 
 mod session_mod{
     pub struct Session{
+        id: i32,
         session_date: NaiveDate,
         session_duration_min: i32,
         martial_art: MartialArt,
