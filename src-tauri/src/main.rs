@@ -1,5 +1,14 @@
-// Prevents additional console window on Windows in release, DO NOT REMOVE!!
 #![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
+
+extern crate diesel;
+extern crate dotenv;
+#[macro_use]
+extern crate diesel_migrations;
+
+mod db;
+
+// Prevents additional console window on Windows in release, DO NOT REMOVE!!
+
 
 // Learn more about Tauri commands at https://tauri.app/v1/guides/features/command
 #[tauri::command]

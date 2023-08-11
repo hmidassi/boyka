@@ -1,4 +1,14 @@
-embed_migrations!();pub fn establish_connection() -> SqliteConnection {
+use diesel::SqliteConnection;
+use dotenv::dotenv;
+use crate::diesel::Connection;
+use diesel_migrations::embed_migrations;
+use std::env;
+
+embed_migrations!();
+
+pub fn establish_connection() -> SqliteConnection {
+
+  //two cases, test config or actual working case
     if cfg!(test) {
         let conn = SqliteConnection::establish(":memory:")
           .unwrap_or_else(|_| panic!("Error creating test database"));
