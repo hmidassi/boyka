@@ -13,6 +13,8 @@ mod martial_artist_mod{
     }
 
     impl MartialArtist{
-
+        pub fn list(conn: &SqliteConnection) -> Vec<Self>{
+            martial_artist_dsl.load::<MartialArtist>(conn).expect("Failed to load martial artists");
+        }
     }
 }
